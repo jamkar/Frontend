@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Liberation Sans", serif;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    width: 100%;
+    padding: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+.content {
+    color: black;
+}
+
+.right p {
+    background-color: rgba(168, 205, 27, 0.71);
+    padding: 15px;
+    margin: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.menu li {
+    background-color: rgba(168, 205, 27, 0.71);
+    margin-bottom: 5px;
+    padding: 8px;
+}
+
+.menu li a {
+    text-decoration: none;
+    display: block;
+    font-size: 1.2em;
+    color: black;
+}
+
+.menu li:hover {
+    background-color: rgba(203, 227, 45, 0.5);
+}
+
+.header ul {
+    background-color: rgba(0, 90, 49, 0.71);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2 );
+}
+
+.header li {
+    float: left;
+    min-width: 100px;
+}
+
+.header li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 13px;
+    background-color: transparent;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+
+.header li a:hover {
+    background-color: rgba(203, 227, 45, 1.0);
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+ .dropdown .dropdown_content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown_content li {
+    float: none;
+    background-color: white;
+}
+
+.dropdown_content li a {
+    text-decoration: none;
+    display: block;
+    background-color:rgba(168, 205, 27, 0.71);
+    color: black;
+    text-align: left;
+}
